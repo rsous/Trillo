@@ -52,12 +52,41 @@
             />
             <span class="user-nav__user-name">Jonas</span>
           </div>
+          <!--Dropdown user menu -->
+          <div class="user-drop">
+            <ul class="user-drop__menu">
+              <li class="user-drop__menu-item">
+                <svg class="user-nav__icon user-drop__icon">
+                  <use xlink:href="img/sprite-menu.svg#icon-new-message"></use>
+                </svg>
+                <span>Profile</span>
+              </li>
+              <li class="user-drop__menu-item">
+                <svg class="user-nav__icon user-drop__icon">
+                  <use xlink:href="img/sprite-menu.svg#icon-notification"></use>
+                </svg>
+                <span>Notifications</span>
+              </li>
+              <li class="user-drop__menu-item">
+                <svg class="user-nav__icon user-drop__icon">
+                  <use xlink:href="img/sprite-menu.svg#icon-cog"></use>
+                </svg>
+                <span>Settings</span>
+              </li>
+              <li class="user-drop__menu-item">
+                <svg class="user-nav__icon user-drop__icon">
+                  <use xlink:href="img/sprite-menu.svg#icon-log-out"></use>
+                </svg>
+                <span>Log out</span>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
 
       <div class="content">
         <!--Dropdown user menu -->
-        <div class="user-drop">
+        <div class="user-drop drop-test">
           <ul class="user-drop__menu">
             <li class="user-drop__menu-item">
               <svg class="user-nav__icon user-drop__icon">
@@ -127,26 +156,31 @@
 
         <main class="hotel-view">
           <div class="gallery">
-            <figure class="gallery__item">
+            <figure class="gallery__item gallery__item-1">
               <img
                 src="img/hotel-1-min.jpg"
                 alt="Photo of hotel 1"
                 class="gallery__photo"
               />
+              <figcaption class="gallery__caption">Night lights</figcaption>
             </figure>
-            <figure class="gallery__item">
+            <figure class="gallery__item gallery__item-2">
               <img
                 src="img/hotel-2-min.jpg"
                 alt="Photo of hotel 2"
                 class="gallery__photo"
               />
+              <figcaption class="gallery__caption">
+                Relax by the pool
+              </figcaption>
             </figure>
-            <figure class="gallery__item">
+            <figure class="gallery__item gallery__item-3">
               <img
                 src="img/hotel-3-min.jpg"
                 alt="Photo of hotel 3"
                 class="gallery__photo"
               />
+              <figcaption class="gallery__caption">Watch the sunset</figcaption>
             </figure>
           </div>
 
