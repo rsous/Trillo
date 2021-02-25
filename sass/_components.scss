@@ -137,9 +137,9 @@
   position: absolute;
   top: 100%;
   right: -1px;
-  width: 100%;
+  width: 150%;
   height: 287%;
-  background-color: var(--color-grey-light-1);
+  background-color: var(--color-grey-light-2);
   z-index: 50;
   padding: 0;
 
@@ -162,7 +162,7 @@
   }
 
   &__menu-item:hover {
-    background-color: var(--color-grey-light-2);
+    background-color: var(--color-grey-light-3);
     color: var(--color-primary);
     cursor: pointer;
   }

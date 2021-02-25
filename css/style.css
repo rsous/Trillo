@@ -208,9 +208,9 @@ body {
   position: absolute;
   top: 100%;
   right: -1px;
-  width: 100%;
+  width: 150%;
   height: 287%;
-  background-color: var(--color-grey-light-1);
+  background-color: var(--color-grey-light-2);
   z-index: 50;
   padding: 0; }
   .user-drop__menu {
@@ -226,7 +226,7 @@ body {
   .user-drop__menu-item:not(:last-child) {
     border-bottom: 1px solid var(--color-grey-light-4); }
   .user-drop__menu-item:hover {
-    background-color: var(--color-grey-light-2);
+    background-color: var(--color-grey-light-3);
     color: var(--color-primary);
     cursor: pointer; }
   .user-drop__menu-item:hover .user-drop__icon {
