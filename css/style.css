@@ -202,6 +202,8 @@ body {
     position: relative; }
   .user-nav__user:hover .user-drop {
     display: inline-block; }
+  .user-nav__chat:hover .message-dropdown {
+    display: block; }
 
 .user-drop {
   display: none;
@@ -212,7 +214,8 @@ body {
   height: 287%;
   background-color: var(--color-grey-light-2);
   z-index: 50;
-  padding: 0; }
+  padding: 0;
+  box-shadow: var(--shadow-dark); }
   .user-drop__menu {
     display: inline-block;
     list-style: none;
@@ -240,18 +243,60 @@ body {
   display: none; }
 
 .message-dropdown {
+  display: none;
   position: absolute;
   top: 7rem;
-  left: -6.2rem;
+  left: -6.3rem;
   z-index: 50;
-  width: 396%;
-  background-color: olive; }
-  .message-dropdown__item {
-    color: #fff;
-    list-style: none;
-    padding: 0 1rem; }
-  .message-dropdown__item:hover {
-    background-color: olivedrab; }
+  width: 437%;
+  background-color: var(--color-grey-light-2);
+  height: 20rem;
+  overflow: auto;
+  box-shadow: var(--shadow-dark);
+  /*&__items:hover &__items-details > * {
+    color: var(--color-primary);
+  }*/ }
+  .message-dropdown__items {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-grey-light-4); }
+    .message-dropdown__items__photo-container {
+      flex: 0 0 20%; }
+    .message-dropdown__items__user-photo {
+      width: 7rem;
+      height: 7rem;
+      padding: 1rem;
+      border-radius: 50%; }
+    .message-dropdown__items-details {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 1rem 1rem 0; }
+    .message-dropdown__items__user-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--color-grey-dark-1);
+      display: flex; }
+    .message-dropdown__items-date {
+      font-size: 0.8rem;
+      align-self: center;
+      margin-left: auto;
+      color: var(--color-grey-dark-2); }
+    .message-dropdown__items__preview {
+      font-size: 1rem;
+      color: var(--color-grey-dark-1); }
+  .message-dropdown__items:hover {
+    background-color: var(--color-grey-light-1); }
+  .message-dropdown__btn {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--color-grey-dark-1); }
+  .message-dropdown__btn:hover {
+    color: var(--color-primary); }
 
 .side-nav {
   font-size: 1.4rem;
