@@ -283,7 +283,7 @@ body {
       margin-left: auto;
       color: var(--color-grey-dark-2); }
     .message-dropdown__items__preview {
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: var(--color-grey-dark-1); }
   .message-dropdown__items:hover {
     background-color: var(--color-grey-light-1); }
