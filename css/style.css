@@ -250,7 +250,7 @@ body {
   z-index: 50;
   width: 437%;
   background-color: var(--color-grey-light-2);
-  height: 20rem;
+  height: 30rem;
   overflow: auto;
   box-shadow: var(--shadow-dark);
   /*&__items:hover &__items-details > * {
