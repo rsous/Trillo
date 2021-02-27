@@ -38,24 +38,224 @@
             </svg>
             <span class="user-nav__notification">7</span>
           </div>
-          <div class="user-nav__icon-box">
+          <div class="user-nav__icon-box user-nav__chat">
             <svg class="user-nav__icon">
               <use xlink:href="img/sprite.svg#icon-chat"></use>
             </svg>
             <span class="user-nav__notification">13</span>
+
+            <!--Message dropdown-->
+            <div class="message-dropdown">
+              <div class="message-dropdown__content">
+                <a href="#" class="message-dropdown__items">
+                  <div class="message-dropdown__items__photo-container">
+                    <img
+                      src="img/user-1.jpg"
+                      alt="user 1"
+                      class="message-dropdown__items__user-photo"
+                    />
+                  </div>
+                  <div class="message-dropdown__items-details">
+                    <p class="message-dropdown__items__user-name">
+                      Zach Bednall
+                      <span class="message-dropdown__items-date"
+                        >42 min. ago</span
+                      >
+                    </p>
+
+                    <p class="message-dropdown__items__preview">
+                      Lorem ipsum dolor sit amet, adipisicing elit. Ad facilis
+                      eum...
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="message-dropdown__items">
+                  <div class="message-dropdown__items__photo-container">
+                    <img
+                      src="img/user-2.jpg"
+                      alt="user 2"
+                      class="message-dropdown__items__user-photo"
+                    />
+                  </div>
+                  <div class="message-dropdown__items-details">
+                    <p class="message-dropdown__items__user-name">
+                      Kate Schimdt
+                      <span class="message-dropdown__items-date"
+                        >1 day ago</span
+                      >
+                    </p>
+
+                    <p class="message-dropdown__items__preview">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="message-dropdown__items">
+                  <div class="message-dropdown__items__photo-container">
+                    <img
+                      src="img/user-3.jpg"
+                      alt="user 3"
+                      class="message-dropdown__items__user-photo"
+                    />
+                  </div>
+                  <div class="message-dropdown__items-details">
+                    <p class="message-dropdown__items__user-name">
+                      Gaël Jongenelen
+                      <span class="message-dropdown__items-date"
+                        >1 day ago</span
+                      >
+                    </p>
+
+                    <p class="message-dropdown__items__preview">
+                      Lorem ipsum dolor sit amet! Iure quas, dolore obcaecati.
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="message-dropdown__items">
+                  <div class="message-dropdown__items__photo-container">
+                    <img
+                      src="img/user-4.jpg"
+                      alt="user 4"
+                      class="message-dropdown__items__user-photo"
+                    />
+                  </div>
+                  <div class="message-dropdown__items-details">
+                    <p class="message-dropdown__items__user-name">
+                      Theo Bergersen
+                      <span class="message-dropdown__items-date"
+                        >2 days ago</span
+                      >
+                    </p>
+
+                    <p class="message-dropdown__items__preview">
+                      Lorem ipsum dolor sit amet consectetur 75 sit...
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="message-dropdown__items">
+                  <div class="message-dropdown__items__photo-container">
+                    <img
+                      src="img/user-5.jpg"
+                      alt="user 5"
+                      class="message-dropdown__items__user-photo"
+                    />
+                  </div>
+                  <div class="message-dropdown__items-details">
+                    <p class="message-dropdown__items__user-name">
+                      Edward Bryant
+                      <span class="message-dropdown__items-date"
+                        >1 week ago</span
+                      >
+                    </p>
+
+                    <p class="message-dropdown__items__preview">
+                      Vero, eius est architecto quam. Nostrum architecto
+                      animi...
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="message-dropdown__items">
+                  <div class="message-dropdown__items__photo-container">
+                    <img
+                      src="img/user-6.jpg"
+                      alt="user 6"
+                      class="message-dropdown__items__user-photo"
+                    />
+                  </div>
+                  <div class="message-dropdown__items-details">
+                    <p class="message-dropdown__items__user-name">
+                      Beth Gibbons
+                      <span class="message-dropdown__items-date"
+                        >3 week ago</span
+                      >
+                    </p>
+
+                    <p class="message-dropdown__items__preview">
+                      Fugit repellat eligendi debitis quia saepe unde?
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="message-dropdown__btn"> View Messages </a>
+              </div>
+            </div>
           </div>
           <div class="user-nav__user">
             <img
-              src="img/user.jpg"
+              src="img/user-shin.jpg"
               alt="User photo"
               class="user-nav__user-photo"
             />
-            <span class="user-nav__user-name">Jonas</span>
+            <span class="user-nav__user-name">碇 シンジ</span>
+            <!--Dropdown user menu -->
+            <div class="user-drop">
+              <ul class="user-drop__menu">
+                <li class="user-drop__menu-item">
+                  <svg class="user-nav__icon user-drop__icon">
+                    <use
+                      xlink:href="img/sprite-menu.svg#icon-new-message"
+                    ></use>
+                  </svg>
+                  <span>Profile</span>
+                </li>
+                <li class="user-drop__menu-item">
+                  <svg class="user-nav__icon user-drop__icon">
+                    <use
+                      xlink:href="img/sprite-menu.svg#icon-notification"
+                    ></use>
+                  </svg>
+                  <span>Notifications</span>
+                </li>
+                <li class="user-drop__menu-item">
+                  <svg class="user-nav__icon user-drop__icon">
+                    <use xlink:href="img/sprite-menu.svg#icon-cog"></use>
+                  </svg>
+                  <span>Settings</span>
+                </li>
+                <li class="user-drop__menu-item">
+                  <svg class="user-nav__icon user-drop__icon">
+                    <use xlink:href="img/sprite-menu.svg#icon-log-out"></use>
+                  </svg>
+                  <span>Log out</span>
+                </li>
+              </ul>
+            </div>
           </div>
+
+          <!-- Message drop down -->
         </nav>
       </header>
 
       <div class="content">
+        <!--Dropdown user menu -->
+        <div class="user-drop drop-test">
+          <ul class="user-drop__menu">
+            <li class="user-drop__menu-item">
+              <svg class="user-nav__icon user-drop__icon">
+                <use xlink:href="img/sprite-menu.svg#icon-new-message"></use>
+              </svg>
+              <span>Profile</span>
+            </li>
+            <li class="user-drop__menu-item">
+              <svg class="user-nav__icon user-drop__icon">
+                <use xlink:href="img/sprite-menu.svg#icon-notification"></use>
+              </svg>
+              <span>Notifications</span>
+            </li>
+            <li class="user-drop__menu-item">
+              <svg class="user-nav__icon user-drop__icon">
+                <use xlink:href="img/sprite-menu.svg#icon-cog"></use>
+              </svg>
+              <span>Settings</span>
+            </li>
+            <li class="user-drop__menu-item">
+              <svg class="user-nav__icon user-drop__icon">
+                <use xlink:href="img/sprite-menu.svg#icon-log-out"></use>
+              </svg>
+              <span>Log out</span>
+            </li>
+          </ul>
+        </div>
+
         <nav class="sidebar">
           <ul class="side-nav">
             <li class="side-nav__item side-nav__item--active">
@@ -97,26 +297,31 @@
 
         <main class="hotel-view">
           <div class="gallery">
-            <figure class="gallery__item">
+            <figure class="gallery__item gallery__item-1">
               <img
                 src="img/hotel-1-min.jpg"
                 alt="Photo of hotel 1"
                 class="gallery__photo"
               />
+              <figcaption class="gallery__caption">Night lights</figcaption>
             </figure>
-            <figure class="gallery__item">
+            <figure class="gallery__item gallery__item-2">
               <img
                 src="img/hotel-2-min.jpg"
                 alt="Photo of hotel 2"
                 class="gallery__photo"
               />
+              <figcaption class="gallery__caption">
+                Relax by the pool
+              </figcaption>
             </figure>
-            <figure class="gallery__item">
+            <figure class="gallery__item gallery__item-3">
               <img
                 src="img/hotel-3-min.jpg"
                 alt="Photo of hotel 3"
                 class="gallery__photo"
               />
+              <figcaption class="gallery__caption">Watch the sunset</figcaption>
             </figure>
           </div>
 
