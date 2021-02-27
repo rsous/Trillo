@@ -14,6 +14,8 @@
   align-items: center;
   justify-content: center;
 
+  position: relative;
+
   @media only screen and (max-width: $bp-smallest) {
     order: 1;
     flex: 0 0 100%;
@@ -46,6 +48,42 @@
 
   &__input:focus + &__button {
     background-color: var(--color-grey-light-3);
+  }
+
+  &__input:focus + &__suggestion-box {
+    max-height: 26rem;
+    transition: all 0.5s;
+    //top: 3.3rem;
+    opacity: 1;
+    box-shadow: var(--shadow-light);
+    transform: translateY(0);
+  }
+
+  &__suggestion-box {
+    position: absolute;
+    width: 90%;
+    top: 3.3rem;
+    background-color: #fff;
+    color: var(--color-grey-dark-3);
+    padding: 3rem 2rem;
+    border: 1px solid var(--color-grey-light-3);
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    z-index: 1500;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-1%);
+  }
+
+  &__search-suggestion {
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &__search-suggestion:hover {
+    color: var(--color-grey-dark-2);
+    cursor: pointer;
   }
 
   &__button {
@@ -251,10 +289,6 @@
   &__items:hover {
     background-color: var(--color-grey-light-1);
   }
-
-  /*&__items:hover &__items-details > * {
-    color: var(--color-primary);
-  }*/
 
   &__btn {
     display: block;
