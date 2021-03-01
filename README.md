@@ -36,7 +36,7 @@
     <a href="https://github.com/rsous/Trillo"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/rsous/Trillo">View Demo</a>
+    <a href="https://rsous.github.io/trillo-preview/">View Demo</a>
     ·
     <a href="https://github.com/rsous/Trillo/issues">Report Bug</a>
     ·
