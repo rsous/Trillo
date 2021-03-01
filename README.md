@@ -96,7 +96,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/rsous/repo_name.git
+   git clone https://github.com/rsous/Trillo.git
    ```
 2. Install NPM packages
    ```sh
@@ -108,6 +108,13 @@ To get a local copy up and running follow these simple steps.
 ## Usage
 
 This project is just to display the results of my journey and small achievements in my front-end development learning process.
+
+To have access to the development environment:
+
+1. Run npm script:
+   ```sh
+   npm run start
+   ```
 
 <!-- ROADMAP -->
 
