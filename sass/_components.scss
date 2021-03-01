@@ -57,6 +57,7 @@
     opacity: 1;
     box-shadow: var(--shadow-light);
     transform: translateY(0);
+    z-index: 100;
   }
 
   &__suggestion-box {
@@ -74,6 +75,7 @@
     overflow: hidden;
     opacity: 0;
     transform: translateY(-1%);
+    z-index: -1;
   }
 
   &__search-suggestion {
@@ -187,6 +189,13 @@
 
   box-shadow: var(--shadow-dark);
 
+  @media only screen and (max-width: 500px) {
+    & {
+      height: 540%;
+      top: 105%;
+    }
+  }
+
   &__menu {
     display: inline-block;
     list-style: none;
@@ -240,6 +249,12 @@
   overflow: auto;
 
   box-shadow: var(--shadow-dark);
+
+  @media only screen and (max-width: 500px) {
+    & {
+      top: 4rem;
+    }
+  }
 
   &__items {
     display: flex;
@@ -446,6 +461,11 @@
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+
+    @media only screen and (max-width: $bp-tiny) {
+      font-size: 1.4rem;
+      padding: 0.7rem 1.5rem;
+    }
   }
 }
 
@@ -457,6 +477,12 @@
   align-items: center;
   border-bottom: var(--line);
 
+  @media only screen and (max-width: $bp-tiny) {
+    & {
+      flex-direction: column;
+    }
+  }
+
   &__heading {
     font-size: 2.25rem;
     font-weight: 300;
@@ -466,13 +492,28 @@
 
     @media only screen and (max-width: $bp-small) {
       font-size: 1.8rem;
-      padding: 1.25rem 2rem;
+      padding: 1.25rem 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.7rem;
+      padding: 1.25rem 1.2rem;
+    }
+
+    @media only screen and (max-width: $bp-tiny) {
+      font-size: 1.8rem;
+      padding: 1.25rem 1.2rem;
     }
   }
 
   &__stars {
     margin-right: auto;
     display: flex;
+
+    @media only screen and (max-width: $bp-tiny) {
+      margin: 2rem auto 0 auto;
+      order: -1;
+    }
   }
 
   &__icon-star,
@@ -480,16 +521,29 @@
     width: 1.75rem;
     height: 1.75rem;
     fill: var(--color-primary);
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 
   &__location {
     font-size: 1.2rem;
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: $bp-tiny) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__icon-location {
     margin-right: 0.5rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-right: 0.1rem;
+    }
   }
 
   &__rating {
@@ -506,6 +560,17 @@
 
     @media only screen and (max-width: $bp-small) {
       padding: 0 1.5rem;
+      margin-left: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0 1rem;
+      margin-left: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-tiny) {
+      align-self: center;
+      margin: 0;
     }
   }
 
@@ -517,6 +582,14 @@
     @media only screen and (max-width: $bp-small) {
       font-size: 1.8rem;
     }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.6rem;
+    }
+
+    @media only screen and (max-width: $bp-tiny) {
+      font-size: 1.6rem;
+    }
   }
 
   &__rating-count {
@@ -525,6 +598,10 @@
 
     @media only screen and (max-width: $bp-small) {
       font-size: 0.5rem;
+    }
+
+    @media only screen and (max-width: $bp-tiny) {
+      font-size: 0.7rem;
     }
   }
 }
@@ -634,8 +711,16 @@
   display: flex;
   align-items: center;
 
+  @media only screen and (max-width: $bp-tiny) {
+    flex-direction: column;
+  }
+
   &__count {
     margin-right: auto;
+
+    @media only screen and (max-width: $bp-tiny) {
+      margin: 0 auto 1rem auto;
+    }
   }
 
   &__friends {
@@ -651,6 +736,10 @@
 
     &:not(:last-child) {
       margin-right: -2rem;
+
+      @media only screen and (max-width: $bp-tiny) {
+        margin-right: -1.5rem;
+      }
     }
   }
 }
@@ -740,6 +829,10 @@
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 2.5rem;
+
+    @media only screen and (max-width: $bp-tiny) {
+      font-size: 1.6rem;
+    }
   }
 }
 
@@ -762,6 +855,10 @@
   overflow: hidden;
   cursor: pointer;
 
+  @media only screen and (max-width: $bp-tiny) {
+    font-size: 1.4rem;
+  }
+
   & > * {
     display: inline-block;
     height: 100%;
@@ -771,6 +868,10 @@
 
   &__visible {
     padding: 2rem 7.5rem;
+
+    @media only screen and (max-width: $bp-tiny) {
+      padding: 2rem 5.5rem;
+    }
   }
 
   &__hidden {
