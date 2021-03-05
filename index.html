@@ -18,17 +18,20 @@
       <header class="header">
         <img src="img/logo.png" alt="trillo logo" class="logo" />
 
-        <form action="#" class="search">
-          <input
-            type="text"
-            class="search__input"
-            placeholder="Search hotels"
-          />
-          <button class="search__button">
-            <svg class="search__icon">
-              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-            </svg>
-          </button>
+        <form action="#" class="search" autocomplete="off">
+          <div class="autocomplete">
+            <input
+              type="text"
+              id="myInput"
+              class="search__input"
+              placeholder="Search hotels"
+            />
+            <button class="search__button">
+              <svg class="search__icon">
+                <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+              </svg>
+            </button>
+          </div>
         </form>
 
         <nav class="user-nav">
@@ -467,5 +470,7 @@
         </main>
       </div>
     </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
