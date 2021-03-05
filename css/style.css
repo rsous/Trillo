@@ -627,7 +627,8 @@ body {
 .autocomplete {
   position: relative;
   display: inline-block;
-  width: 100%; }
+  width: 100%;
+  display: flex; }
 
 .autocomplete-items {
   width: 90%;
