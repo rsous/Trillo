@@ -17,27 +17,20 @@
     <div class="container">
       <header class="header">
         <img src="img/logo.png" alt="trillo logo" class="logo" />
-
-        <form action="#" class="search">
-          <input
-            type="text"
-            class="search__input"
-            placeholder="Search hotels"
-          />
-          <div class="search__suggestion-box">
-            <p class="search__search-suggestion">Four Seasons</p>
-            <p class="search__search-suggestion">Radisson</p>
-            <p class="search__search-suggestion">Hilton</p>
-            <p class="search__search-suggestion">Barcelona</p>
-            <p class="search__search-suggestion">Belmont</p>
-            <p class="search__search-suggestion">Novotel</p>
-            <p class="search__search-suggestion">Caesar's Palace</p>
+        <form action="#" class="search" autocomplete="off">
+          <div class="autocomplete">
+            <input
+              type="text"
+              id="myInput"
+              class="search__input"
+              placeholder="Search hotels"
+            />
+            <button class="search__button">
+              <svg class="search__icon">
+                <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+              </svg>
+            </button>
           </div>
-          <button class="search__button">
-            <svg class="search__icon">
-              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-            </svg>
-          </button>
         </form>
 
         <nav class="user-nav">
@@ -476,5 +469,7 @@
         </main>
       </div>
     </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

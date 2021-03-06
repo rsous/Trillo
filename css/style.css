@@ -722,3 +722,37 @@ body {
   .btn:focus {
     outline: none;
     animation: pulsate 1s infinite; }
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  display: flex; }
+
+.autocomplete-items {
+  width: 90%;
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 999;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 2.2rem;
+  right: 0; }
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4; }
+
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  color: #fff;
+  background-color: var(--color-primary-light); }
+
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: var(--color-primary) !important;
+  color: #ffffff; }
