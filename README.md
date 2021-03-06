@@ -126,7 +126,7 @@ See the [open issues](https://github.com/rsous/Trillo/issues) for a list of prop
 
 ## Contact
 
-Rodolfo - [@rsous3](https://twitter.com/rsous3) - rsous@pm.me
+Rodolfo - [@rsovs](https://twitter.com/rsovs) - rsous@pm.me
 
 Project Link: [https://github.com/rsous/Trillo](https://github.com/rsous/Trillo)
 
