@@ -245,7 +245,7 @@ body {
   background-color: var(--color-grey-light-2);
   z-index: 50;
   padding: 0;
-  box-shadow: var(--shadow-dark); }
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 500px) {
     .user-drop {
       height: 540%;
@@ -286,7 +286,7 @@ body {
   background-color: var(--color-grey-light-2);
   height: 30rem;
   overflow: auto;
-  box-shadow: var(--shadow-dark); }
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 500px) {
     .message-dropdown {
       top: 4rem; } }
@@ -738,7 +738,8 @@ body {
   /*position the autocomplete items to be the same width as the container:*/
   top: 100%;
   left: 2.2rem;
-  right: 0; }
+  right: 0;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15); }
 
 .autocomplete-items div {
   padding: 10px;
